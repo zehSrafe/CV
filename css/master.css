@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #F4FCD9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  max-width: 200px;
+  background-color: #BB9981;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #534340;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #5343404a;
+}
+
+#pf {
+  height: 20%;
+  max-width: 150px;
+  max-height: 150px;
+  text-align: center;
+  margin: 25px auto;
+  display: block;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.content {
+  margin-left: 200px;
+  padding: 16px;
+  height: 100%;
+  max-width: 800px;
+}
+
+#contact-info {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 150px;
+}
+
+.contact-images {
+  height: 15px;
+  width: 15px;
+}
+
+/* #pf {
+  width: 25%;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+  float: right;
+} */
+
+h1 {
+  color: #BB9981;
+}
+
+.introduction {
+  float: left;
+  width: 75%
+}
+
+#profile-title {
+  clear: both;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .content{
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  .sidebar, #title-extra {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    display: block;
+    max-width: none;
+  }
+
+  #title-extra {
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .content {
+    padding-top: 220px;
+    text-align: center;
+  }
+
+  #title-extra {
+    width: auto;
+  }
+
+  .introduction {
+    width: 100%;
+  }
+
+  /* #pf {
+    float: none;
+    margin: auto;
+    display: block;
+    width: 50%;
+  } */
+
+  .sidebar a, #title-extra{
+    text-align: center;
+    float: none;
+  }
+}
