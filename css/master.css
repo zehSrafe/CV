@@ -53,10 +53,12 @@ body {
   max-width: 800px;
 }
 
-#contact-info {
-  list-style: none;
+ul {
   padding-left: 0;
-  margin-left: 150px;
+}
+
+ul li {
+  list-style: none;
 }
 
 .contact-images {
@@ -64,16 +66,12 @@ body {
   width: 15px;
 }
 
-/* #pf {
-  width: 25%;
-  max-width: 150px;
-  min-width: 100px;
-  height: auto;
-  float: right;
-} */
-
 h1 {
   color: #BB9981;
+}
+
+h2 {
+  font-weight: bold !important;
 }
 
 .introduction {
@@ -84,6 +82,30 @@ h1 {
 #profile-title {
   clear: both;
   padding-top: 40px;
+}
+
+.w3-grey {
+  height: 24px;
+}
+
+#french-bar, #java-bar {
+  width: 85%;
+}
+
+#dutch-bar {
+  width: 80%;
+}
+
+#english-bar, #sql-bar {
+  width: 60%;
+}
+
+#html-bar, #css-bar {
+  width: 55%;
+}
+
+#python-bar {
+  width: 75%;
 }
 
 @media screen and (max-width: 700px) {
@@ -125,13 +147,6 @@ h1 {
   .introduction {
     width: 100%;
   }
-
-  /* #pf {
-    float: none;
-    margin: auto;
-    display: block;
-    width: 50%;
-  } */
 
   .sidebar a, #title-extra{
     text-align: center;
