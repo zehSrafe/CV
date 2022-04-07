@@ -38,6 +38,10 @@ html, body {
   background-color: #5343404a;
 }
 
+.not-active {
+  background-color: #BB9981 !important;
+}
+
 #pf {
   height: 20%;
   max-width: 150px;
